@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<TITLE>ATL 8.0 wmsvisual page for object WMSVisualControl</TITLE>
+</HEAD>
+
+<OBJECT ID="WMSVisualControl" WIDTH="90%" HEIGHT="100%" CLASSID="CLSID:E81E219B-EB73-4A05-AAC8-8D1A77DD21D8"></OBJECT>
+
+<script language="JavaScript" type="text/javascript">
+function displaymessage()
+    	    {
+	var wmsvisual = document.getElementById("WMSVisualControl");
+	
+	wmsvisual.AddLocation("1", "123",  0, 0, 0, 0, 0);
+ wmsvisual.AddLocation("1", "124",  1, 0, 0, 0, 0);
+  wmsvisual.AddLocation("1", "125",  2, 0, 0, 0, 0);
+  wmsvisual.AddLocation("1", "126",  3, 0, 0, 0, 0);
+  wmsvisual.AddLocation("1", "127",  4, 0, 0, 0, 0);
+  wmsvisual.AddLocation("1", "128",  5, 0, 0, 0, 0);
+  wmsvisual.AddLocation("1", "129",  0, 1, 0, 0, 0);
+  wmsvisual.AddLocation("1", "133",  1, 1, 0, 0, 0);
+  wmsvisual.AddLocation("1", "143",  2, 1, 0, 0, 0);
+  wmsvisual.AddLocation("1", "153",  3, 1, 0, 0, 0);
+  wmsvisual.AddLocation("1", "163",  4, 1, 0, 0, 0);
+  wmsvisual.AddLocation("1", "173",  5, 1, 0, 0, 0);
+  wmsvisual.AddLocation("1", "183",  6, 1, 0, 0, 0);
+  wmsvisual.AddLocation("1", "193",  7, 1, 0, 0, 0);
+  wmsvisual.AddLocation("1", "223",  0, 0, 1, 2, 0);
+  wmsvisual.AddLocation("1", "224",  1, 0, 1, 2, 0);
+  wmsvisual.AddLocation("1", "225",  2, 0, 1, 2, 0);
+  wmsvisual.AddLocation("1", "226",  3, 0, 1, 2, 0);
+  wmsvisual.AddLocation("1", "227",  4, 2, 1, 2, 0);
+  wmsvisual.AddLocation("1", "228",  5, 0, 1, 2, 0);
+  wmsvisual.AddLocation("1", "229",  0, 1, 1, 2, 0);
+  wmsvisual.AddLocation("1", "233",  1, 1, 1, 2, 0);
+  wmsvisual.AddLocation("1", "243",  2, 1, 1, 2, 0);
+  wmsvisual.AddLocation("1", "253",  3, 1, 10, 2, 0);
+  wmsvisual.AddLocation("1", "263",  4, 1, 10, 2, 0);
+  wmsvisual.AddLocation("1", "273",  5, 1, 10, 2, 0);
+  wmsvisual.AddLocation("1", "283",  6, 1, 10, 2, 0);
+  wmsvisual.AddLocation("1", "293",  7, 1, 10, 2, 0);
+
+
+wmsvisual.BuildScene();
+	}
+</script>
+
+<BODY>
+<input type="BUTTON" onclick="displaymessage()" value="preview" />
+</BODY>
+</HTML>

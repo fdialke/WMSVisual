@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>
+    </LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Samples\1033\C++\MFC\ole\TstCon\Debug\TstCon.exe</LocalDebuggerCommand>
+    <RemoteDebuggerCommand>E:\WMSPractice\Startup\GRD\GRD_WMS2012.lnk</RemoteDebuggerCommand>
+    <RemoteDebuggerServerName>RU\roms@CETUS</RemoteDebuggerServerName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommand>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Samples\1033\C++\MFC\ole\TstCon\Debug\TstCon.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{cf7fd648-4e04-4051-ac18-784525c86f0a}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{f4ee408b-64b0-4ed3-9e1e-8d7cb3ff6c54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WMSVisualControl">
+      <UniqueIdentifier>{5caf3eb5-a223-4bf0-845a-1bf2f235926a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathHelper">
+      <UniqueIdentifier>{114dde05-af1d-4ffb-ab9b-d8cea774423b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{a406f181-5365-464f-a5d9-b950893a40cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{aa241d2e-e611-431a-8d68-a8aa32d85efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VertexRenderEffects">
+      <UniqueIdentifier>{f1a2bc45-81d3-4e20-a72b-7461048ef9e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\RawData">
+      <UniqueIdentifier>{eef159e2-1a9a-4ef7-b353-c6fd1c9b69c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TextWrapper">
+      <UniqueIdentifier>{99f96ac2-5e76-4567-b583-6417595e0b1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Location">
+      <UniqueIdentifier>{5af5ac9f-2829-4204-a30a-5a53b993e273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sky-WarehouseRoom">
+      <UniqueIdentifier>{84a155b7-0b06-45ac-80a3-5c3e898ac267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MD5">
+      <UniqueIdentifier>{76fdf5f0-c79d-486a-87c7-091100ef613e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WMSVisual_i.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="WMSVisual.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="WMSVisualControl.cpp">
+      <Filter>WMSVisualControl</Filter>
+    </ClCompile>
+    <ClCompile Include="MathHelper.cpp">
+      <Filter>MathHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="WMSCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="WMSTimer.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderStates.cpp">
+      <Filter>VertexRenderEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>VertexRenderEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effects.cpp">
+      <Filter>VertexRenderEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="xnacollision.cpp">
+      <Filter>VertexRenderEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="TextWrapper.cpp">
+      <Filter>TextWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryGenerator.cpp">
+      <Filter>VertexRenderEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="WMSVisualControlImpl.cpp">
+      <Filter>WMSVisualControl</Filter>
+    </ClCompile>
+    <ClCompile Include="WMSLocation.cpp">
+      <Filter>Location</Filter>
+    </ClCompile>
+    <ClCompile Include="WMSSky.cpp">
+      <Filter>Sky-WarehouseRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="WarehouseRoom.cpp">
+      <Filter>Sky-WarehouseRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>MD5</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WMSVisual_i.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_IWMSVisualControlEvents_CP.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WMSVisualControl.h">
+      <Filter>WMSVisualControl</Filter>
+    </ClInclude>
+    <ClInclude Include="MathHelper.h">
+      <Filter>MathHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="WMSCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="WMSTimer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderStates.h">
+      <Filter>VertexRenderEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>VertexRenderEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Effects.h">
+      <Filter>VertexRenderEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="xnacollision.h">
+      <Filter>VertexRenderEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="TextWrapper.h">
+      <Filter>TextWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryGenerator.h">
+      <Filter>VertexRenderEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="WMSVisualControlImpl.h">
+      <Filter>WMSVisualControl</Filter>
+    </ClInclude>
+    <ClInclude Include="WMSLocation.h">
+      <Filter>Location</Filter>
+    </ClInclude>
+    <ClInclude Include="WMSSky.h">
+      <Filter>Sky-WarehouseRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="WarehouseRoom.h">
+      <Filter>Sky-WarehouseRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>MD5</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WMSVisual.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="WMSVisual.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="WMSVisualControl.htm" />
+    <None Include="WMSVisualControl.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="WMSVisualControl.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="WMSVisual.def">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="WMSVisual.idl">
+      <Filter>Resource Files</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

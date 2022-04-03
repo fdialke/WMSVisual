@@ -1,0 +1,67 @@
+// WMSVisual.idl : IDL source for WMSVisual
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (WMSVisual.tlb) and marshalling code.
+
+#include "olectl.h"
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(6B24A30F-75AF-4C2F-BCE4-D9C465D59FCF),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IWMSVisualControl : IDispatch{
+	[propget, bindable, requestedit, id(DISPID_HWND)]
+	HRESULT HWND([out, retval]LONG_PTR* pHWND);
+	[id(1)] HRESULT DeleteAllLocations(void);
+	[id(2)] HRESULT AddLocation(BSTR InventLocationName, BSTR WMSLocationName, ULONG ShiftX, ULONG ShiftY, ULONG ShiftZ, BYTE Rotation, FLOAT FillingPercent);
+	[id(3)] HRESULT BuildScene(void);
+	[propget, id(4)] HRESULT pickedLocation([out] BSTR* pickingInventLocation, [out, retval] BSTR* pVal);
+	[id(5)] HRESULT UpdateLocationFillingPercent([in] BSTR inventLocationName, [in] BSTR wmsLocationName, [in] FLOAT fillingPercent);
+	[id(6)] HRESULT UpdateScene(void);
+	[propget, id(7)] HRESULT minFillPercent([out, retval] FLOAT* pVal);
+	[propput, id(7)] HRESULT minFillPercent([in] FLOAT newVal);
+	[propget, id(8)] HRESULT maxFillPercent([out, retval] FLOAT* pVal);
+	[propput, id(8)] HRESULT maxFillPercent([in] FLOAT newVal);
+	[id(9)] HRESULT SetLocationStatus([in] BSTR inventLocationName, [in] BSTR wmsLocationName, [in] SHORT bShow, [in] ULONG dwStatus);
+	[id(10)] HRESULT GetErrorDescription([out] BSTR* errorDescription);
+	[id(11)] HRESULT SetSourceLocation([in] BSTR InventLocationName, [in] BSTR WMSLocationName);
+	[id(12)] HRESULT SetDestinationLocation([in] BSTR InventLocationName, [in] BSTR WMSLocationName);
+	[id(13)] HRESULT ClearSourceDestLocation(void);
+};
+
+[
+	uuid(010B5F2E-4C26-47D4-9472-49B1B967D7E8),
+	version(1.0),
+]
+library WMSVisualLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(A518B4C4-253A-4BC4-8E64-F4C409E769BB)		
+	]
+	dispinterface _IWMSVisualControlEvents
+	{
+		properties:
+		methods:
+			[id(1), source] void PickedLocationChange([in] BSTR inventLocationName, BSTR wmsLocationName);
+			[id(2), source] void LeftMouseClick(void);
+			[id(3), source] void RightButtonClick(void);
+	};
+	[
+		uuid(E81E219B-EB73-4A05-AAC8-8D1A77DD21D8),		
+		licensed,
+		control
+	]
+	coclass WMSVisualControl
+	{
+		[default] interface IWMSVisualControl;
+		[default, source] dispinterface _IWMSVisualControlEvents;
+	};
+};
+

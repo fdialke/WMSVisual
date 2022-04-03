@@ -1,0 +1,34 @@
+HKCR
+{
+	WMSVisualControl.ProgId.1.1 = s 'WMSVisualControl Class'
+	{
+		CLSID = s '{E81E219B-EB73-4A05-AAC8-8D1A77DD21D8}'
+		Insertable
+	}
+	WMSVisualControl.ProgId.1 = s 'WMSVisualControl Class'
+	{		
+		CurVer = s 'WMSVisualControl.ProgId.1.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E81E219B-EB73-4A05-AAC8-8D1A77DD21D8} = s 'WMSVisualControl Class'
+		{
+			ProgID = s 'WMSVisualControl.ProgId.1.1'
+			VersionIndependentProgID = s 'WMSVisualControl.ProgId.1'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove Control
+			ForceRemove Insertable
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 106'
+			MiscStatus = s '0'
+			{
+			    '1' = s '%OLEMISC%'
+			}
+			TypeLib = s '{010B5F2E-4C26-47D4-9472-49B1B967D7E8}'
+			Version = s '1.0'
+		}
+	}
+}
